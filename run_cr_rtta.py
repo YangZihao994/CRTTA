@@ -63,16 +63,16 @@ parser.add_argument('--unc-gamma',    type=float, default=1.0)
 parser.add_argument('--tau',          type=float, default=1.0)
 parser.add_argument('--mu',           type=float, default=0.9,
                     help='EMA decay for pseudo-target')
-parser.add_argument('--theta',        type=float, default=0.5,
+parser.add_argument('--theta',        type=float, default=0.2,
                     help='confidence gate threshold')
 parser.add_argument('--K-aug',        type=int,   default=4,
                     help='number of stochastic augmentation views')
 parser.add_argument('--aug-noise',    type=float, default=0.01,
                     help='Gaussian noise std for lightweight augmentation')
 parser.add_argument('--lambda-max',   type=float, default=1.0)
-parser.add_argument('--lambda2',      type=float, default=1.0)
+parser.add_argument('--lambda2',      type=float, default=0.5)
 parser.add_argument('--lambda3',      type=float, default=1.0)
-parser.add_argument('--lambda4',      type=float, default=0.01)
+parser.add_argument('--lambda4',      type=float, default=0.1)
 parser.add_argument('--eta',          type=float, default=0.01,
                     help='warm-up growth rate for entropy weight')
 
